@@ -1,0 +1,49 @@
+body {
+    text-align: center; /*Alinea todos los componentes horizontalmente*/
+    font-family: sans-serif;
+    background-image: url("/img/coronavirus.png");
+  }
+  
+  #question {
+    display: none;
+  }
+  
+/*
+  #cualquierpalabra -> buscar cualquier elemento que tenga el ID = cualquierpalabra
+  .cualquierpalabra -> buscar cualquier elemento que tenga la CLASE = cualquierpalabra
+
+  elemento -> buscar todos los tags con el nombre = elemento
+
+  body > #ok 
+*/
+  #persons {
+    display: none;
+  }
+  
+  #country {
+    display: none;
+  }
+  
+  #city {
+    display: none;
+  }
+  
+  #time {
+    display: none;
+  }
+  
+  #implement {
+    display: none;
+  }
+  
+  #senses {
+    display: none;
+  }
+  
+  #stats {
+    display: none;
+  }
+  
+  #btn-play-again {
+    display: none;
+  }

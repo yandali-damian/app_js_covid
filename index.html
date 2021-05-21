@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="my-content">
+      <!--Pantalla de Bienvenida-->
+      <div id="welcome">
+        <h1>!Bienvenidx a la trivia del Covid-19!</h1>
+        <h2>Infórmate jugando sobre el Coronavirus</h2>
+        <input
+          id="user-name"
+          placeholder="Coloca tu nombre o apodo"
+          name="name"
+          value=""
+        />
+        <br />
+        <button id="play" disabled="disabled">Go!Go!</button>
+        <!-- disabled para desabilitar el boton-->
+        <!--<a href=""><img src="/img/transparent-coronavirus-coronavirus-disease-2019-virus-cartoon-5ede5e11929837.5138480215916313776005.png" alt=""></a>-->
+      </div>
+
+      <!--ventana de consulta-->
+      <div id="question">
+        <h1 id="ready">
+          ¿
+          <span id="display-name"> </span>
+          estás listo?
+        </h1>
+
+        <!-- se declara la variable-->
+        <h2>¿Qué tema deseas?</h2>
+        <div>
+          <button id="info">Información</button>
+          <button id="care">Cuidado</button>
+          <!--<a href=""><img src="/img/transparent-coronavirus-coronavirus-disease-2019-virus-cartoon-5ede5e11929837.5138480215916313776005.png" alt=""></a>-->
+        </div>
+      </div>
+
+      <!-- preguntas sobre informacion-->
+      <div id="information">
+        <div id="persons">
+          <h2>¡Bienvenidx a la trivia de Información del Covid!</h2>
+          <h3>
+            1. En el rango de las edades ¿qué población es más vulnerable?
+          </h3>
+          <input type="radio" name="persons" value="1" /><label for="persons"
+            >Niños</label
+          >
+          <br />
+          <input type="radio" name="persons" value="2" /><label for="persons"
+            >Jóvenes</label
+          >
+          <br />
+          <input type="radio" name="persons" value="3" /><label for="persons"
+            >Adulto mayor</label
+          >
+          <br />
+          <input type="radio" name="persons" value="4" /><label for="persons"
+            >Adultos</label
+          >
+          <br />
+
+          <button id="btn-persons">Siguiente</button>
+        </div>
+
+        <div id="country">
+          <h3>2.¿Cuál es el país más afectado?</h3>
+          <input type="radio" name="country" value="1" /><label for="country"
+            >EE.UU</label
+          >
+          <br />
+          <input type="radio" name="country" value="2" /><label for="country"
+            >Perú</label
+          >
+          <br />
+          <input type="radio" name="country" value="3" /><label for="country"
+            >India</label
+          >
+          <br />
+          <input type="radio" name="country" value="4" /><label for="country"
+            >Brasil</label
+          >
+          <br />
+          <button id="btn-country">Siguiente</button>
+        </div>
+
+        <div id="city">
+          <h3>3.¿Dónde se originó el virus?</h3>
+          <input type="radio" name="city" value="1" /><label for="city"
+            >Wuhan</label
+          >
+          <br />
+          <input type="radio" name="city" value="2" /><label for="city"
+            >Ganzu</label
+          >
+          <br />
+          <input type="radio" name="city" value="3" /><label for="city"
+            >Hunan</label
+          >
+          <br />
+          <input type="radio" name="city" value="4" /><label for="city"
+            >Yunan</label
+          >
+          <br />
+
+          <!-- <button id="btn-verify-information"">Verificar Respuestas</button> -->
+          <button id="btn-send-information">Enviar Respuestas</button>
+        </div>
+
+        <!--<a href=""><img src="/img/transparent-coronavirus-coronavirus-disease-2019-virus-cartoon-5ede5e11929837.5138480215916313776005.png" alt=""></a>-->
+      </div>
+
+      <!-- preguntas sobre cuidado-->
+      <div id="careful">
+        <div id="time">
+          <h2>¡Bienvenidx a la trivia de Cuidado del Covid!</h2>
+          <h3>
+            1. ¿Cuál es el tiempo recomendado para el lavado de las manos?
+          </h3>
+          <input type="radio" name="time" value="1" /><label for="time"
+            >10 seg</label
+          >
+          <br />
+          <input type="radio" name="time" value="2" /><label for="time"
+            >20 seg</label
+          >
+          <br />
+          <input type="radio" name="time" value="3" /><label for="time"
+            >30 seg</label
+          >
+          <br />
+          <input type="radio" name="time" value="4" /><label for="time"
+            >1 min</label
+          >
+          <br />
+          <button id="btn-time-next">Siguiente</button>
+        </div>
+
+        <div id="implement">
+          <h3>2.¿Qué implemento es más necesario para reducir el contagio?</h3>
+          <input type="radio" name="implement" value="1" /><label
+            for="implement"
+            >Mascarilla</label
+          >
+          <br />
+          <input type="radio" name="implement" value="2" /><label
+            for="implement"
+            >Gorra</label
+          >
+          <br />
+          <input type="radio" name="implement" value="3" /><label
+            for="implement"
+            >Bufanda</label
+          >
+          <br />
+          <input type="radio" name="implement" value="4" /><label
+            for="implement"
+            >Guantes</label
+          >
+          <br />
+          <button id="btn-implements-next">Siguiente</button>
+        </div>
+
+        <div id="senses">
+          <h3>
+            3.¿Cuáles de nuestros sentidos es importante cubrir antes de salir
+            de casa?
+          </h3>
+          <input type="radio" name="senses" value="1" /><label for="senses"
+            >Nariz, boca y ojos</label
+          >
+          <br />
+          <input type="radio" name="senses" value="2" /><label for="senses"
+            >Ojos, orejas y manos</label
+          >
+          <br />
+          <input type="radio" name="senses" value="3" /><label for="senses"
+            >Oídos y boca</label
+          >
+          <br />
+          <input type="radio" name="senses" value="4" /><label for="senses"
+            >N.A</label
+          >
+          <br />
+          <!--<button id="btn-verify-careful">Verificar Respuestas</button>-->
+          <button id="btn-send-careful">Enviar Respuestas</button>
+        </div>
+      </div>
+
+      <div id="div-results">
+        <p id="stats">Haz acertado <span id="display-stats"> </span> de 3</p>
+        <button id="btn-play-again">Volver a jugar</button>
+      </div>
+    </div>
+    <!-- fin de div My-content-->
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
